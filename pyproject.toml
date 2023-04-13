@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "testing-narrative"
+version = "0.1.0"
+description = ""
+authors = ["emma <eqbrown@isf.edu.hk>"]
+readme = "README.md"
+packages = [{include = "testing_narrative"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+simple-term-menu = "^1.6.1"
+inquirerpy = "^0.3.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
