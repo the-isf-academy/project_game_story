@@ -8,9 +8,9 @@ view.start_game(main_story.title,main_story.start_node)
 
 while story_running:
   
-    choice = view.menu("\n[what will you do?]", main_story.get_current_options())
+    choice = view.menu("\n[what will you do?]", main_story.get_current_branches())
 
-    main_story.advance_story(choice.id)
+    main_story.set_current_node(choice.id)
 
     view.show_current_description(main_story.current_node)
 
@@ -20,4 +20,5 @@ while story_running:
 print('\n','-'*50)
 print('END')
     
+
 

@@ -1,9 +1,9 @@
-from story import Node, Story
+from helpers.tree import Tree
+from helpers.node import Node
 
-main_story = Story(
-    title="A simple horror story...",
+main_story = Tree(
+    title='Main Horror Story',
     start_node=Node(0,"You see two paths."))
-
 
 main_story.add_node(
     root_id = 0,
