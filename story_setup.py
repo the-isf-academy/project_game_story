@@ -1,35 +1,27 @@
-from helpers.tree import Tree
-from helpers.node import Node
+from story import Story
 
-main_story = Tree(
-    title='Main Horror Story',
-    start_node=Node(0,"You see two paths."))
+def story_setup():
+    main_story = Story(
+        title='My First Story',
+        start_id = 'start',
+        start_option_title = "The start of the story.",
+        start_description= "Start description."
+    )
 
-main_story.add_node(
-    root_id = 0,
-    data = {
-        'title':'go left',
-        'description':'You enter a dark dark dark room.'
-    })
+    main_story.add_new_child(
+        parent_id = 'start', 
+        child_id = 'option 1',
+        child_option_title='Chose option 1',
+        child_description="Option 1 description."
+    )
 
-main_story.add_node(
-    root_id = 0,
-    data = {
-        'title':'go right',
-        'description':'You enter a room and it fills you with light.'
-    })
 
-main_story.add_node(
-    root_id = 0,
-    data = {
-        'title':'stay put',
-        'description':"You don't move and dance."
-    })
+    return main_story
 
-main_story.add_node(
-    root_id = 1,
-    data = {
-        'title':'Slowly punch the air for precaution.',
-        'description':'As you wind up your arm, bats swarm you and drink your blood.'
-    })
+
+
+
+
+
+
 

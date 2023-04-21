@@ -36,14 +36,6 @@ python-versions = ">=3.7.0"
 wcwidth = "*"
 
 [[package]]
-name = "simple-term-menu"
-version = "1.6.1"
-description = "A Python package which creates simple interactive menus on the command line."
-category = "main"
-optional = false
-python-versions = "~=3.5"
-
-[[package]]
 name = "wcwidth"
 version = "0.2.6"
 description = "Measures the displayed width of unicode strings in a terminal"
@@ -54,7 +46,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "00c8db6223d7d90493cb5383096b7cbba5f0c7237ae1e38d4030bae195eb4f33"
+content-hash = "101976080cfd1fa2586fef1c852d1a1c44189920944a2f338f33f27419ce35cd"
 
 [metadata.files]
 inquirerpy = [
@@ -68,10 +60,6 @@ pfzy = [
 prompt-toolkit = [
     {file = "prompt_toolkit-3.0.38-py3-none-any.whl", hash = "sha256:45ea77a2f7c60418850331366c81cf6b5b9cf4c7fd34616f733c5427e6abbb1f"},
     {file = "prompt_toolkit-3.0.38.tar.gz", hash = "sha256:23ac5d50538a9a38c8bde05fecb47d0b403ecd0662857a86f886f798563d5b9b"},
-]
-simple-term-menu = [
-    {file = "simple-term-menu-1.6.1.tar.gz", hash = "sha256:368b4158d1749b868552fb6c054b8301785086c71a7253dac8404cc3cb2d30e8"},
-    {file = "simple_term_menu-1.6.1-py3-none-any.whl", hash = "sha256:f12945d5c6998088e86a228e0aff12ff655f5bfad786c86677f23faa1d2afa50"},
 ]
 wcwidth = [
     {file = "wcwidth-0.2.6-py2.py3-none-any.whl", hash = "sha256:795b138f6875577cd91bba52baf9e445cd5118fd32723b460e30a0af30ea230e"},

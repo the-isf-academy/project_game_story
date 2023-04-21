@@ -1,24 +1,19 @@
-from story_setup import main_story
+from story_setup import story_setup
 from view import View
 
 view = View()
-story_running = True
+main_story = story_setup()
 
-view.start_game(main_story.title,main_story.start_node)
 
-while story_running:
-  
-    choice = view.menu("\n[what will you do?]", main_story.get_current_branches())
+view.start_game(main_story)
 
-    main_story.set_current_node(choice.id)
+while main_story.is_finished() == False: 
+    chosen_node = view.menu("[what will you do?]", main_story.get_current_children())
+    main_story.set_current_node(chosen_node)
+    view.show_current_description(chosen_node)
 
-    view.show_current_description(main_story.current_node)
+view.end_game()
 
-    if main_story.is_end():
-        story_running = False
 
-print('\n','-'*50)
-print('END')
-    
 
 

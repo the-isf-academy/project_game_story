@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "testing-narrative"
+name = "project-game-story"
 version = "0.1.0"
 description = ""
 authors = ["emma <eqbrown@isf.edu.hk>"]
@@ -8,7 +8,6 @@ packages = [{include = "testing_narrative"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-simple-term-menu = "^1.6.1"
 inquirerpy = "^0.3.4"
 
 
