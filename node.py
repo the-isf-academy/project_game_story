@@ -3,12 +3,17 @@ class Node():
         self.id = id
         self.children = []   
         self.option_title = option_title                    
-        self.description = description   
+        self.description = description  
+         
 
     def __str__(self):
+        # defines how the Node will print
+
         return f"{self.option_title}"
 
     def add_child(self,child_node):
+        # adds a child node 
+
         self.children.append(child_node)
 
     def find(self, id):
