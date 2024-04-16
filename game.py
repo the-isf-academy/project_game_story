@@ -1,10 +1,10 @@
-from story_setup import story_setup
+from story_setup import main_story # stores the Story object in main_story
 from view import View
 
-view = View()                       # creates a View object
-main_story = story_setup()          # stores the Story object in main_story
+view = View() # creates a View object
+         
 
-
+# show the start message
 view.start_game(main_story)
 
 # main game loop, runs until story is finished
@@ -13,6 +13,7 @@ while main_story.is_finished() == False:
     main_story.set_current_node(chosen_node)
     view.show_current_description(chosen_node)
 
+# show the end message
 view.end_game()
 
 

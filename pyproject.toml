@@ -2,9 +2,8 @@
 name = "project_game_story"
 version = "0.1.0"
 description = ""
-authors = ["emma <eqbrown@isf.edu.hk>"]
+authors = ["emma <eqbrown@isf.edu.hk>", "britte <bgenzlinger@isf.edu.hk>"]
 readme = "README.md"
-packages = [{include = "testing_narrative"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
