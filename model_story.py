@@ -2,7 +2,7 @@ from model_node import Node
 
 class Story():
     def __init__(self, title, start_id, start_option_title, start_description):
-        # initializes a node object with its properties
+        # initializes a Story object with its properties
 
         self.title = title # the title of your story
         self.current_node = Node(start_id, start_option_title, start_description) #the current Node of your story
@@ -11,7 +11,7 @@ class Story():
 
     def add_new_child(self, parent_id, child_id, child_option_title, child_description):
         # adds a new child node to a parent node
-        parent_node = self.current_node.find(parent_id)
+        parent_node = self.first_node.find(parent_id)
 
         new_child_node = Node(
             id = child_id,

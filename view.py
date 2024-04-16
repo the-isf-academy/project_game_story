@@ -4,7 +4,7 @@ class View:
 
     def menu(self,prompt, options):
         # This function creates an interactive Terminal menu.
-        # it returns the selected Node 
+        # it returns the chosen ption 
 
         choice = inquirer.select(
             message= f"\n{prompt}",
@@ -24,11 +24,11 @@ class View:
     def start_game(self, story):
         print("="*50)
         print(f"Title: {story.title}")
-        print(f"\n{story.current_node.option_title}")
-        print(f"{story.current_node.description}")
+        print(f"\n{story.first_node.option_title}")
+        print(f"{story.first_node.description}")
         print("="*50)
 
-    def show_current_description(self,node):
+    def show_node_description(self,node):
         print(f"{node.description}")
 
     def end_game(self):
