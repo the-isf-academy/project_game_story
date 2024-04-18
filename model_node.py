@@ -8,11 +8,13 @@ class Node():
         self.description = description  # text to show if this option is selected 
 
     def __str__(self):
-        # allows a node to be printed out
+        # defines how a node will be printed 
+
         return f"{self.option_title}"
 
     def add_child(self,child_node):
-        # adds a new child to this node
+        # adds a new child node to a node
+
         self.children.append(child_node)
     
     def find(self, id, seen=None):
@@ -20,6 +22,7 @@ class Node():
         # It searches through the nodes to return the node with the given id
         # It uses a fancy technique called recursion to find the correct node
         # If you're interested in learning more, ask a teacher! 
+        
         if self.id == id: 
             return self
         
