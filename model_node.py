@@ -11,6 +11,11 @@ class Node():
         # defines how a node will be printed 
 
         return f"{self.option_title}"
+    
+    def __repr__(self):
+        # Provides a developer-friendly string representation of the Node object,
+
+        return f"Node: {self.id}"
 
     def add_child(self,child_node):
         # adds a new child node to a node

@@ -37,4 +37,4 @@ class View:
         print("End of Story")
         print("="*50)
 
-
+  

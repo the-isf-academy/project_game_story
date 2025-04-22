@@ -2,17 +2,33 @@ from model_story import Story
 
 main_story = Story(
     title='My First Story',
-    start_id = 'start',
-    start_option_title = "The start of the story.",
-    start_description= "Start description."
+    first_id = 'cks',
+    first_option_title = "You are in CKS",
+    first_description= "It's the start of the day! You're hungry and want cookies. Try to collect cookies!",
 )
 
 main_story.add_new_child(
-    parent_id = 'start', 
-    child_id = 'option 1',
-    child_option_title='Chose option 1',
-    child_description="Option 1 description."
+    parent_id = 'cks', 
+    child_id = 'library',
+    child_option_title='You enter the library',
+    child_description="A teacher tells you to be quiet and food isn't allowed here.",
 )
+
+main_story.add_new_child(
+    parent_id = 'cks', 
+    child_id = 'b2',
+    child_option_title='You walk up the stairs to B2',
+    child_description="You a few students noodling on the piano. You smell cookies to the left.",
+)
+
+main_story.add_new_child(
+    parent_id = 'b2', 
+    child_id = 'makerspace',
+    child_option_title='You turn left and enter the makerspace',
+    child_description="You see a sea of 3D printers making noises and making art. And see a cookie!",
+)
+
+
 
 
 

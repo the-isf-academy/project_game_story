@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 inquirerpy = "^0.3.4"
+pillow = "^10.3.0"
 
 
 [build-system]

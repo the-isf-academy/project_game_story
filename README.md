@@ -1,8 +1,7 @@
 # Project Story
 
 **Game Description:** 
-*Replace this with a short description of your game.*
-
+This is a choose your own adventure game.
 
 ---
 
