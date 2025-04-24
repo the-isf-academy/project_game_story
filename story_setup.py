@@ -18,7 +18,7 @@ main_story.add_new_child(
     parent_id = 'cks', 
     child_id = 'b2',
     child_option_title='You walk up the stairs to B2',
-    child_description="You a few students noodling on the piano.",
+    child_description="You see a few students playing the piano.",
 )
 
 main_story.add_new_child(
